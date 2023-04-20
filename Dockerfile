@@ -14,7 +14,7 @@ COPY --from=gcs /usr/bin/cbt /usr/bin/cbt
 
 RUN git clone https://github.com/gobitfly/eth2-beaconchain-explorer
 RUN cd eth2-beaconchain-explorer && make && ls -lh bin
-COPY --from=bin /src/eth2-beaconchain-explorer/bin/explorer /usr/bin/explorer
-COPY --from=bin /src/eth2-beaconchain-explorer/bin/eth1indexer /usr/bin/eth1indexer
-COPY --from=bin /src/eth2-beaconchain-explorer/bin/frontend-data-updater /usr/bin/frontend-data-updater
-COPY --from=bin /src/eth2-beaconchain-explorer/bin/statistics /usr/bin/statistics
+COPY /src/eth2-beaconchain-explorer/bin/explorer /usr/bin/explorer
+COPY /src/eth2-beaconchain-explorer/bin/eth1indexer /usr/bin/eth1indexer
+COPY /src/eth2-beaconchain-explorer/bin/frontend-data-updater /usr/bin/frontend-data-updater
+COPY /src/eth2-beaconchain-explorer/bin/statistics /usr/bin/statistics

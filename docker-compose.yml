@@ -24,6 +24,7 @@ services:
     image: gobitfly/eth2-beaconchain-explorer
     depends_on:
       - bigtable
+    build: ./
     restart: unless-stopped
     command: 
       - eth1indexer

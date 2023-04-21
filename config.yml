@@ -18,7 +18,7 @@ chain:
   slotsPerEpoch: 32
   secondsPerSlot: 12
   minGenesisActiveValidatorCount: 120
-  configPath: /v/testnet.dev.opside.chain.yml
+  configPath: /v/testnet.chain.yml
   genesisTimestamp: 1681913343
   genesisValidatorsRoot: "0x7554841bd66d957412ef996e663680e2ebe3ca207a3812ecef43b582c149c760"
 lastAttestationCachePath: "/data/lastAttestationCache"

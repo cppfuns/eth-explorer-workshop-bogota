@@ -20,3 +20,5 @@ COPY --from=explorer /src/eth2-beaconchain-explorer/bin/explorer /usr/bin/explor
 COPY --from=explorer /src/eth2-beaconchain-explorer/bin/eth1indexer /usr/bin/eth1indexer
 COPY --from=explorer /src/eth2-beaconchain-explorer/bin/frontend-data-updater /usr/bin/frontend-data-updater
 COPY --from=explorer /src/eth2-beaconchain-explorer/bin/statistics /usr/bin/statistics
+RUN PATH="/usr/bin/:$PATH"
+RUN export PATH

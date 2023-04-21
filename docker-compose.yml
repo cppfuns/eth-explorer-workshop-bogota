@@ -30,7 +30,6 @@ services:
       - eth1indexer
       - -bigtable.project=explorer
       - -bigtable.instance=bigtable:9000
-      - -network=sepolia
       - -erigon=ws://159.135.196.68:8546
       - -data.concurrency=2
       - -data.offset=100

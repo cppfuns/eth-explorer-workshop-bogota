@@ -28,6 +28,7 @@ services:
     restart: unless-stopped
     command: 
       - eth1indexer
+      - -config=/v/config.yml
       - -bigtable.project=explorer
       - -bigtable.instance=bigtable:9000
       - -erigon=ws://159.135.196.68:8546
